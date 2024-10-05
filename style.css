@@ -93,7 +93,7 @@ ol[role='list'] {
     Font face rules 
 */
 @font-face {
-    font-family: RobotoTest;
+    font-family: Roboto;
     src: 
         local(Roboto-Regular), 
         url(/assets/fonts/Roboto-Regular.ttf);
@@ -101,15 +101,36 @@ ol[role='list'] {
 }
 
 @font-face {
-    font-family: RobotoTest;
+    font-family: Roboto;
     src: 
         local(Roboto Bold), 
         url(/assets/fonts/Roboto-Bold.ttf);
     font-weight: 700;
 }
 
+
+/* General styling============================================ */
 body {
-    font-family: RobotoTest;
-    font-weight: 400;
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-800);
+    line-height: 1.5;
 }
+
+.newsletter-cta {
+    
+}
+
+.newsletter-cta > .content {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.newsletter-cta .title {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-bold);
+}
+
 
