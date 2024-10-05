@@ -1,6 +1,6 @@
 
-/* Reset CSS =================================================== */
-/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/* Reset CSS =================================================== 
+    https://www.joshwcomeau.com/css/custom-css-reset/ */
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -55,11 +55,37 @@
   }
  */
 
-/* other custom Reset CSS ======================== */
+/* other custom Reset CSS ------------------------------ */
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* Remove list styles on ul, ol elements with a list role, 
+which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
     padding: 0;
 }
+
+
+/* ================================================
+    Custom Properties
+*/
+:root {
+    --clr-neutral-800: hsl(234, 29%, 20%);
+    --clr-neutral-700: hsl(235, 18%, 26%);
+    --clr-neutral-200: hsl(231, 7%, 60%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+  
+    --clr-accent-400: hsl(4, 100%, 67%);
+    --clr-accent-500: hsl(347, 100%, 66%);
+  
+    --ff-base: Roboto, sans-serif;
+  
+    --fw-regular: 400;
+    --fw-bold: 700;
+  
+    --fs-300: .825rem;
+    --fs-400: 1rem;
+    --fs-900: 2.5rem;
+  }
+
+  
