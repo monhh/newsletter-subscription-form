@@ -118,10 +118,8 @@ body {
     line-height: 1.5;
 }
 
-.newsletter-cta {
-    
-}
 
+/* newsletter-cta ----------- */
 .newsletter-cta > .content {
     display: grid;
     gap: 1rem;
@@ -133,4 +131,19 @@ body {
     font-weight: var(--fw-bold);
 }
 
+/* checkmark-list ----------- */
+.checkmark-list {
+    display: grid;
+    gap: .625rem;
+}
 
+/* Before the content INSIDE that element, not before the element itself */
+.checkmark-list li::before {
+    /* content: 'TESTING '; */
+    content: url('./assets/images/icon-list.svg');
+}
+
+.checkmark-list li {
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+}
