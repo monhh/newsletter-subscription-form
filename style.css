@@ -131,7 +131,13 @@ body {
     font-weight: var(--fw-bold);
 }
 
-/* checkmark-list ----------- */
+.newsletter-cta form {
+    margin-block-start: 1.25rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* checkmark-list ----------------------------------------------------- */
 .checkmark-list {
     display: grid;
     gap: .625rem;
@@ -146,4 +152,64 @@ body {
 .checkmark-list li {
     display: grid;
     grid-template-columns: 2.5rem auto;
+}
+
+
+/* form ============================================================== */
+.form-group {
+    display: grid;
+    gap: .5rem;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+}
+
+/* input--------------------------------- */
+input {
+    padding: 1rem;
+    border-radius: .5rem;
+    font: inherit;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    border: 1px solid var(--clr-neutral-200);
+}
+  
+input::placeholder {
+    color:  var(--clr-neutral-200);
+}
+
+
+/* button ---------------------------- */
+.button {
+    background: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+    font: inherit;
+    font-weight: var(--fw-bold);
+    border: 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+/* button gradient ------------------- */
+.button:hover,
+.button:focus-visible {
+    position: relative;
+    background-image: linear-gradient(-90deg,
+        var(--clr-accent-400),
+        var(--clr-accent-500)
+    );
+}
+
+form {isolation: isolate;} /* for button gradient */
+
+.button:hover::after,
+.button:focus-visible::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: inherit;
+    border-radius: inherit;
+    translate: 0 1.5rem;
+    filter: blur(1rem);
+    opacity: .5;
 }
